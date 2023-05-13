@@ -52,5 +52,27 @@ namespace MaximumOfThree
             }
             return firstNum;
         }
+        public string FindMaxOfString(string first, string second, string third)
+        {
+            if (first.Length.CompareTo(second.Length) > 0 && first.Length.CompareTo(third.Length) > 0 ||
+                first.Length.CompareTo(second.Length) >= 0 && first.Length.CompareTo(third.Length) > 0 ||
+                first.Length.CompareTo(second.Length) > 0 && first.Length.CompareTo(third.Length) >= 0)
+            {
+                return first;
+            }
+            if (second.Length.CompareTo(first.Length) > 0 && first.Length.CompareTo(third.Length) > 0 ||
+                second.Length.CompareTo(first.Length) >= 0 && first.Length.CompareTo(third.Length) > 0 ||
+                second.Length.CompareTo(first.Length) > 0 && first.Length.CompareTo(third.Length) >= 0)
+            {
+                return second;
+            }
+            if (third.Length.CompareTo(first.Length) > 0 && third.Length.CompareTo(second.Length) > 0 ||
+                third.Length.CompareTo(first.Length) >= 0 && third.Length.CompareTo(second.Length) > 0 ||
+                third.Length.CompareTo(first.Length) > 0 && third.Length.CompareTo(second.Length) >= 0)
+            {
+                return third;
+            }
+            return first;
+        }
     }
 }
