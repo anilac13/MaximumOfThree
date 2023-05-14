@@ -19,8 +19,10 @@ namespace MaximumOfThree
                         int b = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Enter 3rd number");
                         int c = Convert.ToInt32(Console.ReadLine());
-                        MaximumOf3<int> maximum = new MaximumOf3<int>(a, b, c);
-                        int val = maximum.FindMaxOfThree(a, b, c);
+                        Console.WriteLine("Enter 4th number");
+                        int d = Convert.ToInt32(Console.ReadLine());
+                        MaximumOf3<int> maximum = new MaximumOf3<int>(a, b, c,d);
+                        int val = maximum.FindMaxOfThree(a, b, c, d);
                         Console.WriteLine("Maximum number is: {0}", val);
                         break;
                     case 2:
@@ -30,8 +32,10 @@ namespace MaximumOfThree
                         double num2 = Convert.ToDouble(Console.ReadLine());
                         Console.WriteLine("Enter 3rd number");
                         double num3 = Convert.ToDouble(Console.ReadLine());
-                        MaximumOf3<double> max = new MaximumOf3<double>(num1, num2, num3);
-                        double value = max.FindMaxOfThree(num1, num2, num3);
+                        Console.WriteLine("Enter 4th number");
+                        double num4 = Convert.ToDouble(Console.ReadLine());
+                        MaximumOf3<double> max = new MaximumOf3<double>(num1, num2, num3,num4);
+                        double value = max.FindMaxOfThree(num1, num2, num3,num4);
                         Console.WriteLine("Maximum number is: {0}", value);
                         break;
                     case 3:
@@ -41,9 +45,11 @@ namespace MaximumOfThree
                         string str2 = Console.ReadLine();
                         Console.WriteLine("Enter 3rd string");
                         string str3 = Console.ReadLine();
-                        MaximumOf3<string> maximumOf3 = new MaximumOf3<string>(str1, str2, str3);
-                        string result = maximumOf3.FindMaxOfThree(str1, str2, str3);
-                        Console.WriteLine("Maximum string is: {0}", result);
+                        Console.WriteLine("Enter 3rd string");
+                        string str4 = Console.ReadLine();
+                        MaximumOf3<string> maximumOf3 = new MaximumOf3<string>(str1, str2, str3,str4);
+                        string result = maximumOf3.FindMaxOfThree(str1, str2, str3, str4);
+                        Console.WriteLine("Maximum string is: " + result);
                         break;
                     case 4:
                         flag = false;
