@@ -49,7 +49,7 @@ namespace MaximumOfThree
                         string str4 = Console.ReadLine();
                         MaximumOf3<string> maximumOf3 = new MaximumOf3<string>(str1, str2, str3,str4);
                         string result = maximumOf3.FindMaxOfThree(str1, str2, str3, str4);
-                        Console.WriteLine("Maximum string is: " + result);
+                        Console.WriteLine("Maximum string is: {0}", result);
                         break;
                     case 4:
                         flag = false;
